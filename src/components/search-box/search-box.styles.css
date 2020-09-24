@@ -1,9 +1,12 @@
 .search {
     -webkit-appearance: none;
     border: none;
+    border-radius: 5px;
     outline: none;
-    padding: 5px 10px;
-    width: 180px;
+    padding: 10px 20px;
+    width: 300px;
     margin-bottom: 30px;
     font-size: 20px;
+    opacity: .8;
+    box-shadow: 0 10px 20px rgba(0,0,0, .4);
 }

@@ -5,7 +5,8 @@
     background-color: #95dada;
     border: 1px solid gray;
     border-radius: 5px;
-    padding: 25px;
+    padding: 50px 10px;
+    box-shadow: 0 10px 20px rgba(0,0,0, .4);
     cursor: pointer;
     -moz-osx-font-smoothing: grayscale;
     backface-visibility: hidden;
@@ -15,4 +16,28 @@
 
 .card-container:hover {
     transform: scale(1.05);
+    animation: shake .3s;
+}
+
+.card-container > img,
+.card-container > h2 {
+    margin-bottom: 10px;
+}
+
+@keyframes shake {
+    25% {
+        transform: scale(1.05) rotate(1deg); 
+    }
+
+    50% {
+        transform: scale(1.05) rotate(0deg);
+    }
+
+    75% {
+        transform: scale(1.05) rotate(1deg); 
+    }
+
+    100% {
+        transform: scale(1.05) rotate(0deg);
+    }
 }
